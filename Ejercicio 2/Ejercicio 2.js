@@ -56,7 +56,7 @@ function init() {
     var randomAxis=Axis[Math.floor(Math.random()*Axis.length)];
 
     dim = 2; 		//Medida que va a tener cada cubo
-    delta =1; 		//Movimiento de cada cubo con respecto a los ejes
+    delta =1.2; 		//Movimiento de cada cubo con respecto a los ejes
     angulo= (Math.PI/2)
 
     Cubo.push(cubo(dim, dim, dim, 0xE61F1F, 'Physical', false));
@@ -70,7 +70,7 @@ function init() {
     Cubo[0].translateZ(delta);
 
     //movimiento de ejes cubo 1
-    mov=1;
+    mov=1.1;
     angulo=(Math.PI/2)
 
     Cubo[1].translateX(mov);
@@ -78,7 +78,7 @@ function init() {
     Cubo[1].translateZ(mov);
 
     //movimiento de ejes cubo 2
-    pos=1;
+    pos=1.1;
     angulo=(Math.PI/2)
 
     Cubo[2].translateX(pos);
@@ -98,7 +98,7 @@ function init() {
     Cubo[2].scale.set(0.25,0.25,0.25)
 
     //Rotacion de los cubos 1 y 3 
-    angulo=(Math.PI/12)
+    angulo=(Math.PI/4)
     Cubo[0].rotateY(angulo);
     Cubo[2].rotateY(angulo);
 
